@@ -61,7 +61,6 @@ const fireMaterial = new THREE.ShaderMaterial({
         uPerlinTexture: new THREE.Uniform(perlinTexture)
     },
     side: THREE.DoubleSide,
-    transparent: true,
 })
 
 /** Model */
@@ -103,7 +102,6 @@ gltfLoader.load(
         spideylight1.material = poleLightMaterial
         spideylight2.material = poleLightMaterial
         fire.material = fireMaterial
-
         scene.add(gltf.scene)
     }
 )
